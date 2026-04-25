@@ -1,6 +1,6 @@
 # Methodology
 
-ActionProof Support-50 evaluates action correctness in AI support workflows.
+The Support Agent Action Benchmark evaluates action correctness in AI support workflows.
 
 The benchmark asks a plain question:
 

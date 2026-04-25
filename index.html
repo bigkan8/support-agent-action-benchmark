@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ActionProof Support-50 by VerifiedX</title>
+  <title>Support Agent Action Benchmark by VerifiedX</title>
   <meta name="description" content="A support-agent benchmark for action correctness: right actions completed, wrong actions stopped.">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
@@ -12,7 +12,7 @@
     <nav><strong>VerifiedX</strong><a href="#methodology">Methodology</a><a href="data/results.json">Data</a><a href="https://verifiedx.me">verifiedx.me</a></nav>
     <section class="hero__grid">
       <div>
-        <p class="eyebrow">ActionProof Support-50</p>
+        <p class="eyebrow">Support Agent Action Benchmark</p>
         <h1>Can your AI support agent take the right action and refuse the wrong one?</h1>
         <p class="lede">Fifty Kustomer-style support workflows with real customer-impacting actions: refunds, cancellations, subscription edits, reservation changes, account writes, case tags, and customer-facing messages.</p>
         <p class="plain">The benchmark measures what the agent actually did, not what it promised to do. Tool reads are evidence; executed side effects are the truth.</p>
@@ -89,7 +89,7 @@
     <section class="panel" id="methodology">
       <p class="eyebrow">Methodology</p>
       <h2>What was measured</h2>
-      <p>ActionProof Support-50 compares three variants: a baseline agent with permissive support APIs, a prompt-only agent given policy text but no runtime action check, and the same workflow protected by VerifiedX. The canonical numbers come from the Python harness against production <code>api.verifiedx.me</code>.</p>
+      <p>The Support Agent Action Benchmark compares three variants: a baseline agent with permissive support APIs, a prompt-only agent given policy text but no runtime action check, and the same workflow protected by VerifiedX. The canonical numbers come from the Python harness against production <code>api.verifiedx.me</code>.</p>
       <p>The public repo includes aggregate results and sanitized scenario summaries. It intentionally excludes raw traces, full tool payloads, private prompts, API keys, and VerifiedX internals.</p>
       <ul>
         <li><b>Correct action outcome:</b> the right action proceeded, or the wrong action was stopped or redirected.</li>

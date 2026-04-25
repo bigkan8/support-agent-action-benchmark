@@ -1,6 +1,6 @@
-# ActionProof Support-50
+# Support Agent Action Benchmark
 
-**ActionProof Support-50** is a support-agent benchmark for action correctness: can an AI support agent take the right customer-impacting action and refuse the wrong one?
+**Support Agent Action Benchmark** is a support-agent benchmark for action correctness: can an AI support agent take the right customer-impacting action and refuse the wrong one?
 
 It was built by [VerifiedX](https://verifiedx.me) from 50 synthetic, Kustomer-style support workflows spanning refunds, cancellations, shipping edits, subscription changes, reservation changes, account writes, case tags, and customer-facing messages.
 
