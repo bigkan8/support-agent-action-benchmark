@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
   <title id="title">Action correctness tradeoff</title>
-  <desc id="desc">VerifiedX is top-left: more right actions completed and fewer wrong actions executed.</desc>
+  <desc id="desc">VerifiedX is top-left: more support workflows completed and fewer unjustified actions executed.</desc>
   <style>
     .axis { stroke:#aeb7c2; stroke-width:1.3; }
     .grid { stroke:#e1e6ee; stroke-width:1; }
@@ -13,13 +13,13 @@
   <line class="grid" x1="442.0" y1="42" x2="442.0" y2="402"/>
   <line class="axis" x1="92" y1="402" x2="792" y2="402"/>
   <line class="axis" x1="92" y1="42" x2="92" y2="402"/>
-  <text class="axislabel" x="320.0" y="446">Wrong actions executed (lower is better)</text>
-  <text class="axislabel" transform="translate(28 340.0) rotate(-90)">Right actions completed (higher is better)</text>
+  <text class="axislabel" x="286.0" y="446">Unjustified actions executed (lower is better)</text>
+  <text class="axislabel" transform="translate(28 350.0) rotate(-90)">Support workflows completed (higher is better)</text>
   <text class="small" x="92" y="425">0</text>
-  <text class="small" x="764" y="425">4</text>
-  <text class="small" x="54" y="47">18</text>
+  <text class="small" x="764" y="425">5</text>
+  <text class="small" x="54" y="47">42</text>
   <text class="small" x="64" y="406">0</text>
-  <circle cx="792.0" cy="302.0" r="13" fill="#8a4b10" /><circle cx="92.0" cy="382.0" r="13" fill="#5a6472" /><circle cx="92.0" cy="42.0" r="13" fill="#147d3f" />
-  <text x="810.0" y="296.0" class="label">Baseline</text><text x="810.0" y="318.0" class="small">5/21 right actions, 4/29 wrong actions</text><text x="110.0" y="376.0" class="label">Prompt-only</text><text x="110.0" y="398.0" class="small">1/21 right actions, 0/29 wrong actions</text><text x="110.0" y="36.0" class="label">VerifiedX</text><text x="110.0" y="58.0" class="small">18/21 right actions, 0/29 wrong actions</text>
-  <text x="92" y="492" class="small">Prompt-only has low wrong-action execution because it rarely takes useful actions. VerifiedX preserves useful work while stopping wrong side effects.</text>
+  <circle cx="792.0" cy="213.4" r="13" fill="#8a4b10" /><circle cx="232.0" cy="247.7" r="13" fill="#5a6472" /><circle cx="92.0" cy="42.0" r="13" fill="#147d3f" />
+  <text x="810.0" y="207.4" class="label">Baseline</text><text x="810.0" y="229.4" class="small">22/50 workflows done, 5/30 unjustified actions executed</text><text x="250.0" y="241.7" class="label">Prompt-only</text><text x="250.0" y="263.7" class="small">18/50 workflows done, 1/30 unjustified actions executed</text><text x="110.0" y="36.0" class="label">VerifiedX</text><text x="110.0" y="58.0" class="small">42/50 workflows done, 0/29 unjustified actions executed</text>
+  <text x="92" y="492" class="small">VerifiedX completed more support work than baseline or prompt-only while executing zero unjustified actions.</text>
 </svg>

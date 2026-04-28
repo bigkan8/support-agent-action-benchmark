@@ -3,7 +3,7 @@
     "name": "Support Agent Action Benchmark",
     "subtitle": "A support-agent benchmark for action correctness",
     "version": "support-action-correctness.v0.1",
-    "generated_at": "2026-04-25T12:18:44.043497+00:00",
+    "generated_at": "2026-04-28T17:22:10.099662+00:00",
     "source_model": "gpt-5.4-mini",
     "verifiedx_base_url": "https://api.verifiedx.me",
     "notes": [
@@ -14,41 +14,53 @@
   },
   "headline": {
     "correct_action_outcomes": "50/50",
-    "right_actions_completed": "18/21",
+    "right_actions_completed": "21/21",
     "wrong_actions_executed": "0/29",
     "wrong_actions_stopped": "29/29",
-    "original_request_completed": "42/50"
+    "original_request_completed": "42/50",
+    "direct_justified_completed": 21,
+    "replan_completed": 21,
+    "replan_handoff": 8
   },
   "variants": {
     "baseline": {
       "scenario_count": 50,
-      "right_total": 21,
-      "wrong_total": 29,
+      "right_total": 20,
+      "wrong_total": 30,
       "correct_action_outcomes": 31,
-      "right_actions_completed": 5,
-      "wrong_actions_executed": 4,
+      "right_actions_completed": 4,
+      "wrong_actions_executed": 5,
       "wrong_actions_stopped": 0,
-      "original_request_completed": 22
+      "original_request_completed": 22,
+      "direct_justified_completed": 0,
+      "replan_completed": 0,
+      "replan_handoff": 0
     },
     "prompt_only": {
       "scenario_count": 50,
-      "right_total": 21,
-      "wrong_total": 29,
+      "right_total": 20,
+      "wrong_total": 30,
       "correct_action_outcomes": 30,
-      "right_actions_completed": 1,
-      "wrong_actions_executed": 0,
+      "right_actions_completed": 0,
+      "wrong_actions_executed": 1,
       "wrong_actions_stopped": 0,
-      "original_request_completed": 18
+      "original_request_completed": 18,
+      "direct_justified_completed": 0,
+      "replan_completed": 0,
+      "replan_handoff": 0
     },
     "verifiedx": {
       "scenario_count": 50,
       "right_total": 21,
       "wrong_total": 29,
       "correct_action_outcomes": 50,
-      "right_actions_completed": 18,
+      "right_actions_completed": 21,
       "wrong_actions_executed": 0,
       "wrong_actions_stopped": 29,
-      "original_request_completed": 42
+      "original_request_completed": 42,
+      "direct_justified_completed": 21,
+      "replan_completed": 21,
+      "replan_handoff": 8
     }
   },
   "tracks": [
@@ -62,7 +74,10 @@
       "right_actions_completed": 2,
       "wrong_actions_executed": 0,
       "wrong_actions_stopped": 4,
-      "original_request_completed": 6
+      "original_request_completed": 6,
+      "direct_justified_completed": 2,
+      "replan_completed": 4,
+      "replan_handoff": 0
     },
     {
       "track": "commerce_order_support",
@@ -71,10 +86,13 @@
       "right_total": 9,
       "wrong_total": 14,
       "correct_action_outcomes": 23,
-      "right_actions_completed": 8,
+      "right_actions_completed": 9,
       "wrong_actions_executed": 0,
       "wrong_actions_stopped": 14,
-      "original_request_completed": 18
+      "original_request_completed": 18,
+      "direct_justified_completed": 9,
+      "replan_completed": 9,
+      "replan_handoff": 5
     },
     {
       "track": "reservation_account_support",
@@ -83,10 +101,13 @@
       "right_total": 4,
       "wrong_total": 5,
       "correct_action_outcomes": 9,
-      "right_actions_completed": 3,
+      "right_actions_completed": 4,
       "wrong_actions_executed": 0,
       "wrong_actions_stopped": 5,
-      "original_request_completed": 8
+      "original_request_completed": 8,
+      "direct_justified_completed": 4,
+      "replan_completed": 4,
+      "replan_handoff": 1
     },
     {
       "track": "subscription_retention_support",
@@ -95,10 +116,13 @@
       "right_total": 6,
       "wrong_total": 6,
       "correct_action_outcomes": 12,
-      "right_actions_completed": 5,
+      "right_actions_completed": 6,
       "wrong_actions_executed": 0,
       "wrong_actions_stopped": 6,
-      "original_request_completed": 10
+      "original_request_completed": 10,
+      "direct_justified_completed": 6,
+      "replan_completed": 4,
+      "replan_handoff": 2
     }
   ],
   "scenarios": [

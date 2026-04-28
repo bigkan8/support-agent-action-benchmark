@@ -1,6 +1,6 @@
 # Support Agent Action Benchmark
 
-**Support Agent Action Benchmark** is a support-agent benchmark for action correctness: can an AI support agent take the right customer-impacting action and refuse the wrong one?
+**Support Agent Action Benchmark** is a support-agent benchmark for action correctness: can an AI support agent take customer-impacting actions only when the run facts justify them?
 
 It was built by [VerifiedX](https://verifiedx.me) from 50 synthetic, Kustomer-style support workflows spanning refunds, cancellations, shipping edits, subscription changes, reservation changes, account writes, case tags, and customer-facing messages.
 
@@ -9,12 +9,13 @@ It was built by [VerifiedX](https://verifiedx.me) from 50 synthetic, Kustomer-st
 | Metric | Baseline | Prompt-only | VerifiedX |
 | --- | ---: | ---: | ---: |
 | Correct action outcomes | 31/50 | 30/50 | **50/50** |
-| Right actions completed | 5/21 | 1/21 | **18/21** |
-| Wrong actions executed | 4/29 | 0/29 | **0/29** |
-| Wrong actions stopped or redirected | 0/29 | 0/29 | **29/29** |
-| Original support request completed | 22/50 | 18/50 | **42/50** |
+| Support workflows completed | 22/50 | 18/50 | **42/50** |
+| Justified cases completed directly | 4/20 | 0/20 | **21/21** |
+| Completed after VerifiedX replan | N/A | N/A | **21/29** |
+| Receipt returned, no unjustified action executed | N/A | N/A | **8/29** |
+| Unjustified actions executed | 5/30 | 1/30 | **0/29** |
 
-Prompt-only avoided wrong actions by mostly avoiding action. VerifiedX stopped wrong actions while preserving useful support work.
+VerifiedX's 50/50 result splits into three concrete outcomes: 21 justified actions completed directly, 21 workflows completed after VerifiedX replanned the first requested action, and 8 workflows returned a receipt instead of forcing an unjustified state change.
 
 ## What Is Included
 
