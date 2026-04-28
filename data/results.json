@@ -3,7 +3,7 @@
     "name": "Support Agent Action Benchmark",
     "subtitle": "A support-agent benchmark for action correctness",
     "version": "support-action-correctness.v0.1",
-    "generated_at": "2026-04-28T17:22:10.099662+00:00",
+    "generated_at": "2026-04-28T18:43:49.093596+00:00",
     "source_model": "gpt-5.4-mini",
     "verifiedx_base_url": "https://api.verifiedx.me",
     "notes": [

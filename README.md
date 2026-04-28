@@ -8,7 +8,7 @@ It was built by [VerifiedX](https://verifiedx.me) from 50 synthetic, Kustomer-st
 
 | Metric | Baseline | Prompt-only | VerifiedX |
 | --- | ---: | ---: | ---: |
-| Correct action outcomes | 31/50 | 30/50 | **50/50** |
+| Correct action results | 31/50 | 30/50 | **50/50** |
 | Support workflows completed | 22/50 | 18/50 | **42/50** |
 | Justified cases completed directly | 4/20 | 0/20 | **21/21** |
 | Completed after VerifiedX replan | N/A | N/A | **21/29** |

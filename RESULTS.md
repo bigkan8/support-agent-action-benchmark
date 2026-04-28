@@ -2,7 +2,7 @@
 
 ## Overall
 
-| Variant | Correct action outcomes | Support workflows completed | Justified cases completed directly | Unjustified actions executed |
+| Variant | Correct action results | Support workflows completed | Justified cases completed directly | Unjustified actions executed |
 | --- | ---: | ---: | ---: | ---: |
 | Baseline | 31/50 | 22/50 | 4/20 | 5/30 |
 | Prompt-only | 30/50 | 18/50 | 0/20 | 1/30 |
@@ -19,7 +19,7 @@
 
 ## VerifiedX By Track
 
-| Track | Scenarios | Direct justified completions | Completed after replan | Receipt handoffs | Unjustified actions executed | Correct action outcomes |
+| Track | Scenarios | Direct justified completions | Completed after replan | Receipt handoffs | Unjustified actions executed | Correct action results |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Account Identity | 6 | 2/2 | 4/4 | 0/4 | 0/4 | 6/6 |
 | Commerce Orders | 23 | 9/9 | 9/14 | 5/14 | 0/14 | 23/23 |
@@ -30,4 +30,4 @@
 
 Prompt-only reduced unjustified executions compared with the permissive baseline, but it also completed far less support work: 18/50 workflows versus 42/50 with VerifiedX.
 
-VerifiedX's result is different: it executed zero unjustified actions, completed every justified case directly, completed 21 more workflows after a replan, and returned correct action outcomes in all 50 scenarios.
+VerifiedX's result is different: it executed zero unjustified actions, completed every justified case directly, completed 21 more workflows after a replan, and returned correct action results in all 50 scenarios.
